@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Baloo 2', cursive;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    padding-left:8%;
+    padding-right:8%;
+    overflow:hidden;
+    background:linear-gradient(to left,#ccccb2,#00f7ff);
+}
+.navbar{
+    width:100%;
+    display:flex;
+    align-items:center;
+
+}
+.logo{
+    width:50px;
+    margin:30px 0;
+    cursor:pointer;
+    font-size:40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.menu-icon{
+    width:50px;
+    display:none;
+    cursor:pointer;
+    
+}
+nav{
+    flex:1;
+    text-align:right;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-right:30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+     font-size:1.2rem;
+}
+nav ul li a:hover{
+    color:rgb(105, 105, 129);
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+/* asdfasfasf */
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.col-1{
+    margin-top:100px;
+    flex-basis:50%;
+    position:relative;
+    margin-left:40px;
+    line-height:30px;
+}
+.col-1 h1{
+    font-size:3rem;
+    letter-spacing:0.1rem;
+    color:rgb(75, 111, 148);
+    line-height:50px;
+    
+
+}
+.col-1 h3{
+    letter-spacing:0.1rem;
+    margin-top:10px;
+}
+
+.col-1  p{
+    line-height:15px;
+    margin-top:10px;
+}
+button{
+    border-radius:5px;
+    margin-top:10px;
+    padding:5px;
+    font-size:20px;
+}
+.col-2{
+    position:relative;
+    flex-basis:60%;
+    display:flex;
+    align-items:center;
+    margin-top:100px;
+}
+.col-2 img{
+    width:500px;
+  
+    border-radius:10px;
+      
+
+}
+
+@media  only screen and (max-width:700px){
+    nav ul  {
+        width:100%;
+        background:skyblue;
+        
+        position:absolute;
+        top:75px;
+        right:0;
+        z-index:2;
+    }
+    nav ul li{
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .menu-icon{
+        display:block;
+    }
+}
