@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll';
+import resume from '../assets/ResumeAnkitNepal.pdf'
 
 const Navbar = () => {
 
@@ -10,14 +11,9 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
     const handleDownloadResume = () => {
         try {
-            const resumePath = 'ResumeAnkitNepal.pdf'; // Assuming correct path
-            console.log("Resume path:", resumePath);
-
             const downloadLink = document.createElement('a');
-            downloadLink.href = resumePath;
-            downloadLink.download = 'AnkitNepalResume.pdf';
-
-            console.log('Download link:', downloadLink);
+            downloadLink.href = resume;
+            downloadLink.download = 'ResumeAnkitNepal.pdf'; // Set the filename here
 
             document.body.appendChild(downloadLink);
             downloadLink.click();
